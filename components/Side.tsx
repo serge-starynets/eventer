@@ -1,9 +1,9 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import Link from 'next/link'
-import Logo from '@/images/pardy.png'
-import { Button } from '@nextui-org/react'
+import Image from 'next/image';
+import Link from 'next/link';
+import Logo from '@/images/eventer.png';
+import { Button } from '@nextui-org/react';
 
 const links = [
   { route: '/dashboard', name: 'Home' },
@@ -11,16 +11,16 @@ const links = [
   { route: '/dashboard/guests', name: 'Guests' },
   { route: '/dashboard/activity', name: 'Activity' },
   { route: '/dashboard/settings', name: 'Settings' },
-]
+];
 
 const Side = () => {
-  const activeClass = 'bg-primary hover:bg-primary'
+  const activeClass = 'bg-primary hover:bg-primary';
 
   return (
     <div className="w-full h-full px-3 relative">
       <div className="mb-12">
         <figure className="w-[80px] pt-4">
-          <Image src={Logo} alt="pardy" />
+          <Image src={Logo} alt="eventer" />
         </figure>
       </div>
       <div>
@@ -42,7 +42,7 @@ const Side = () => {
         </Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Side
+export default Side;
