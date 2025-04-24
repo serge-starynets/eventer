@@ -1,7 +1,9 @@
 import { getEventsForDashboard } from '@/utils/events';
 import { getCurrentUser } from '@/utils/users';
+import { deleteEvent } from '@/actions/events';
 import { Chip } from '@nextui-org/react';
 import Link from 'next/link';
+import DeleteEventButton from '@/components/DeleteEvent';
 
 const statusColors = {
   draft: 'warning',
@@ -38,6 +40,7 @@ const EventsRsvp = async () => {
                   {event.name}
                 </Chip>
               </span>
+              <DeleteEventButton eventId={event.id} />
             </div>
           ))}
         </div>
